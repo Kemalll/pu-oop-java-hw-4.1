@@ -22,7 +22,9 @@ public class GPS extends JFrame implements MouseListener {
             for (int k = 0; k < FOREST_SIZE; k++) {
                 forest[l][k] = (new UnchartedField(l, k, Color.GREEN));
             }
-        }forest[7][7]=(new MoveingField(Color.YELLOW));
+        }
+            forest[1][6]=(new UncrossableSwamp(Color.BLUE));
+            forest[7][7]=(new MoveingField(Color.YELLOW));
 
         this.setSize(800, 800);
         this.setVisible(true);
